@@ -23,6 +23,11 @@ public class Main {
         garage.ajouterVehicule(new Camion("Volvo", 2019, "Bleu", 15));
         garage.ajouterVehicule(new Moto("Harley Davidson", 2021, "Noir", false));
          */
+        System.out.println("\nLe contenu du Garage avant le retrait : ");
+        garage.afficherGarage();
+
+        garage.retirerVehicule(1);
+
         System.out.println("\nLe contenu final du Garage : ");
         garage.afficherGarage();
     }
