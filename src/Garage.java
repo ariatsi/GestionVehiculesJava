@@ -35,4 +35,17 @@ public class Garage {
         }
          */
     }
+
+    // Retrait d'un véhicule par son indice : Facultatif
+    public void retirerVehicule(int idx) {
+        if (idx >= 0 && idx < index) {
+            for (int i = idx; i < index - 1; i++) {
+                vehicules[i] = vehicules[i + 1];
+            }
+            vehicules[index - 1] = null;
+            index--;
+        } else {
+            System.out.println("Index invalide. Aucun véhicule retiré.");
+        }
+    }
 }
