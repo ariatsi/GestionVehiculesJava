@@ -22,9 +22,17 @@ public class Garage {
     }
 
     public void afficherGarage() {
+        for (Vehicule v : vehicules) {
+            if (v != null) {
+                v.afficherDetails();
+                v.klaxonner();
+            }
+        }
+        /*
         for (int i = 0; i < index; i++) {
             vehicules[i].afficherDetails();
             vehicules[i].klaxonner();
         }
+         */
     }
 }
